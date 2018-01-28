@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Undergraduate Information Systems</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=OpenSans" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <script src="https://code.highcharts.com/modules/sunburst.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+  </head>
+  <body data-spy="scroll" data-target="#ftco-navbar" data-offset="200">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="#section-home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#section-features" class="nav-link">General Information</a></li>
+            <li class="nav-item"><a href="#section-services" class="nav-link">Jobs</a></li>
+            <li class="nav-item"><a href="#section-pricing" class="nav-link">Internships</a></li>
+            <li class="nav-item"><a href="#section-about" class="nav-link">Further Education</a></li>
+            <li class="nav-item"><a href="#section-contact" class="nav-link">Locations</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="ftco-cover ftco-slant" style="background-image: url(images/classroom2.jpg);" id="section-home">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center ftco-vh-100">
+          <div class="col-md-10">
+            <h1 class="ftco-heading ftco-animate">Undergraduate Information Systems</h1>
+            <h2 class="h5 ftco-subheading mb-5 ftco-animate">First Destination Outcomes for the 2016 graduating class</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="ftco-section bg-light  ftco-slant ftco-slant-white" id="section-features">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="media d-block mb-4 text-left p-md-5 p-4 ftco-animate">
+              <div class="media-body">
+                <div class="ftco-icon mb-3"><span class="display-4 text-muted"><img src="images/grad.png" width="70px"></span></div>
+                <h5 class="mt-0">General Information</h5>
+                <p class="mb-5">Our students find success no matter where they go. Learn more about the general outcomes of the 2016 graduating class of Information System seniors. Click on the graph to learn more information about each outcome!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate">
+              <!-- <div class="ftco-icon mb-3"><span class="oi oi-bolt display-4 text-muted"></span></div> -->
+              <div class="media-body">
+
+                <div id="generalpie" class="chart" style="width:100%; height:400px;"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <section class="ftco-section ftco-slant" id="section-services">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-8">
+            <div class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate">
+              <!-- <div class="ftco-icon mb-3"><span class="oi oi-bolt display-4 text-muted"></span></div> -->
+              <div class="media-body">
+
+                <div id="jobpie" class="chart" style="width:100%; height:400px;"></div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="media d-block mb-4 text-left p-md-5 p-4 ftco-animate">
+              <div class="media-body">
+                <div class="ftco-icon mb-3"><span class="display-4 text-muted"><img src="images/job.png" width="70px"></span></div>
+                <h5 id="jobtitle" class="mt-0">Jobs</h5>
+                <p id="jobdesc" class="mb-5">This graph shows the job positions of the graduating undergraduates who have majored in Information Systems and are employed. Click on the graph to learn more information about each job position!</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light ftco-slant ftco-slant-white" id="section-pricing">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="media d-block mb-4 text-left p-md-5 p-4 ftco-animate">
+              <div class="media-body">
+                <div class="ftco-icon mb-3"><span class="display-4 text-muted"><img src="images/intern.png" width="70px"></span></div>
+                <h5 class="mt-0">Internships</h5>
+                <p class="mb-5">Here, you can find out more about the internships the graduating class of IS seniors have completed during their time at CMU.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate">
+              <div class="media-body">
+
+                <div id="internshipsun" class="chart" style="width:100%;"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="ftco-section ftco-slant ftco-slant-light" id="section-about">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-md-12 text-center ftco-animate">
+            <h2 class="mt-0">Further Education</h2>
+            <div class="row justify-content-center mb-5">
+              <div class="col-md-7">
+                <p class="mb-5">This chart shows the graduate schools IS students are going to attend and how many students are attending each program.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row">
+
+          <div class="col-md-6 mb-5 ftco-animate">
+            <p id="cmu" class="mb-3">Carnegie Mellon University</p>
+          </div>
+          <div class="col-md-6 mb-5 ftco-animate">
+            <p id="bu" class="mb-3">Boston University</p>
+          </div>
+
+        </div>
+
+        <div id="bubbles"></div>
+
+
+      </div>
+    </section>
+
+
+    <section class="ftco-section bg-light ftco-slant ftco-slant-white" id="section-counter">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12 text-center ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Fun Facts</h2>
+            <div class="row justify-content-center mb-5">
+              <!-- <div class="col-md-7">
+                <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row">
+          <div class="col-md ftco-animate">
+            <div class="ftco-counter text-center">
+              <span class="ftco-number" data-number="82100">0</span>
+              <span class="ftco-label">Average Salary</span>
+            </div>
+          </div>
+          <div class="col-md ftco-animate">
+            <div class="ftco-counter text-center">
+              <span class="ftco-number" data-number="56">0</span>
+              <span class="ftco-label">out of 68 employed</span>
+            </div>
+          </div>
+          <!-- <div class="col-md ftco-animate">
+            <div class="ftco-counter text-center">
+              <span class="ftco-number" data-number="124">0</span>
+              <span class="ftco-label">Number of Clients</span>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+    </section>
+    <section class="ftco-section bg-white ftco-slant ftco-slant-dark" id="section-contact">
+      <div class="container">
+        <div class="row">
+
+          <!-- <div class="col-md pr-md-5 mb-5">
+          </div> -->
+
+
+
+
+
+
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcqzu88xOX7WCe2h2H5e_XTQ1RaT7Hmt0&extension=.js"></script>
+          <script src="https://cdn.mapkit.io/v1/infobox.js"></script>
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+          <link href="https://cdn.mapkit.io/v1/infobox.css" rel="stylesheet" >
+
+          <script>
+              google.maps.event.addDomListener(window, 'load', init);
+              var map, markersArray = [];
+
+              function bindInfoWindow(marker, map, location) {
+                  google.maps.event.addListener(marker, 'click', function() {
+                      function close(location) {
+                          location.ib.close();
+                          location.infoWindowVisible = false;
+                          location.ib = null;
+                      }
+
+                      if (location.infoWindowVisible === true) {
+                          close(location);
+                      } else {
+                          markersArray.forEach(function(loc, index){
+                              if (loc.ib && loc.ib !== null) {
+                                  close(loc);
+                              }
+                          });
+
+                          var boxText = document.createElement('div');
+                          boxText.style.cssText = 'background: #fff;';
+                          boxText.classList.add('md-whiteframe-2dp');
+
+                          function buildPieces(location, el, part, icon) {
+                            console.log(location.desc);
+                              if (location[part] === '') {
+                                  return '';
+                              } else if (location.iw[part]) {
+                                  switch(el){
+                                      case 'photo':
+                                          if (location.photo){
+                                              return '<div class="iw-photo" style="background-image: url(' + location.photo + ');"></div>';
+                                           } else {
+                                              return '';
+                                          }
+                                          break;
+                                      case 'iw-toolbar':
+                                          return '<div class="iw-toolbar"><h3 class="md-subhead">' + location.title + '</h3></div>';
+                                          break;
+                                      case 'div':
+                                          switch(part){
+                                              case 'email':
+                                                  return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="mailto:' + location.email + '" target="_blank">' + location.email + '</a></span></div>';
+                                                  break;
+                                              case 'web':
+                                                  return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="' + location.web + '" target="_blank">' + location.web_formatted + '</a></span></div>';
+                                                  break;
+                                              case 'desc':
+                                                  return '<label class="iw-desc" for="cb_details"><input type="checkbox" id="cb_details"/><h3 class="iw-x-details">Details</h3><i class="material-icons toggle-open-details"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><p class="iw-x-details">' + location.desc + '</p></label>';
+                                                  break;
+                                              default:
+                                                  return '<div class="iw-details"><i class="material-icons"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span>' + location[part] + '</span></div>';
+                                              break;
+                                          }
+                                          break;
+                                      case 'open_hours':
+                                          var items = '';
+                                          if (location.open_hours.length > 0){
+                                              for (var i = 0; i < location.open_hours.length; ++i) {
+                                                  if (i !== 0){
+                                                      items += '<li><strong>' + location.open_hours[i].day + '</strong><strong>' + location.open_hours[i].hours +'</strong></li>';
+                                                  }
+                                                  var first = '<li><label for="cb_hours"><input type="checkbox" id="cb_hours"/><strong>' + location.open_hours[0].day + '</strong><strong>' + location.open_hours[0].hours +'</strong><i class="material-icons toggle-open-hours"><img src="//cdn.mapkit.io/v1/icons/keyboard_arrow_down.svg"/></i><ul>' + items + '</ul></label></li>';
+                                              }
+                                              return '<div class="iw-list"><i class="material-icons first-material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><ul>' + first + '</ul></div>';
+                                           } else {
+                                              return '';
+                                          }
+                                          break;
+                                   }
+                              } else {
+                                  return '';
+                              }
+                          }
+
+
+                          boxText.innerHTML =
+                              buildPieces(location, 'photo', 'photo', '') +
+                              buildPieces(location, 'iw-toolbar', 'title', '') +
+                              buildPieces(location, 'div', 'address', 'location_on') +
+                              buildPieces(location, 'div', 'web', 'public') +
+                              buildPieces(location, 'div', 'email', 'email') +
+                              buildPieces(location, 'div', 'tel', 'phone') +
+                              buildPieces(location, 'div', 'int_tel', 'phone') +
+                              buildPieces(location, 'open_hours', 'open_hours', 'access_time') +
+                              buildPieces(location, 'div', 'desc', 'keyboard_arrow_down');
+
+                          var myOptions = {
+                              alignBottom: true,
+                              content: boxText,
+                              disableAutoPan: true,
+                              maxWidth: 0,
+                              pixelOffset: new google.maps.Size(-140, -40),
+                              zIndex: null,
+                              boxStyle: {
+                                  opacity: 1,
+                                  width: '280px'
+                              },
+                              closeBoxMargin: '0px 0px 0px 0px',
+                              infoBoxClearance: new google.maps.Size(1, 1),
+                              isHidden: false,
+                              pane: 'floatPane',
+                              enableEventPropagation: false
+                          };
+
+                          location.ib = new InfoBox(myOptions);
+                          location.ib.open(map, marker);
+                          location.infoWindowVisible = true;
+                      }
+                  });
+              }
+
+              function init() {
+                  var mapOptions = {
+                      center: new google.maps.LatLng(38.487994997649984,-97.04040632031251),
+                      zoom: 4,
+                      gestureHandling: 'auto',
+                      fullscreenControl: false,
+                      zoomControl: true,
+                      disableDoubleClickZoom: true,
+                      mapTypeControl: false,
+                      scaleControl: false,
+                      scrollwheel: true,
+                      streetViewControl: false,
+                      draggable : true,
+                      clickableIcons: true,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP,
+                      styles: [{"featureType":"water","stylers":[{"visibility":"on"},{"color":"#b5cbe4"}]},{"featureType":"landscape","stylers":[{"color":"#efefef"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#83a5b0"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#bdcdd3"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#e3eed3"}]},{"featureType":"administrative","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"road"},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{},{"featureType":"road","stylers":[{"lightness":20}]}]
+                  }
+                  var mapElement = document.getElementById('mapkit-6193');
+                  var map = new google.maps.Map(mapElement, mapOptions);
+                  var locations = [
+                      {"title":"Accenture","address":"","desc":"Industry: Professional services <br />IS Alumni: 3","tel":"","int_tel":"","email":"","web":"","web_formatted":"","open":"","lat":40.7630044,"lng":-73.97909370000002,"vicinity":"1345 6th Avenue, New York","open_hours":[{"day":"Monday","hours":"8am–5pm"},{"day":"Tuesday","hours":"8am–5pm"},{"day":"Wednesday","hours":"8am–5pm"},{"day":"Thursday","hours":"8am–5pm"},{"day":"Friday","hours":"8am–5pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Adobe Systems","address":"","desc":"Industry: computer software<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"www.adobe.com","web_formatted":"adobe.com","open":"","time":"","lat":38.92809219999999,"lng":-77.2151232,"vicinity":"McLean","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Amazon Global Corporate Headquarters","address":"","desc":"Industry: electronic commerce<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.amazon.com/","web_formatted":"amazon.com","open":"","time":"","lat":47.6222881,"lng":-122.3364939,"open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Apple","address":"","desc":"Industry: computer hardware/software<br />IS Alumni: 3","tel":"","int_tel":"","email":"","web":"apple.com","web_formatted":"apple.com","open":"","lat":37.3316756,"lng":-122.03018900000001,"vicinity":"One Infinite Loop, Cupertino","open_hours":[{"day":"Monday","hours":"9am–7pm"},{"day":"Tuesday","hours":"9am–7pm"},{"day":"Wednesday","hours":"9am–7pm"},{"day":"Thursday","hours":"9am–7pm"},{"day":"Friday","hours":"9am–7pm"},{"day":"Saturday","hours":"10am–6pm"},{"day":"Sunday","hours":"11am–5pm"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Applied Predictive Technologies","address":"","desc":"Industry: software<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.predictivetechnologies.com/","web_formatted":"predictivetechnologies.com","open":"","time":"","lat":38.8817477,"lng":-77.11226899999997,"open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"AT&T Labs","address":"","desc":"Industry: telecommunications<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.att.com","web_formatted":"att.com","open":"","lat":40.3974568,"lng":-74.13561340000001,"vicinity":"200 S Laurel Ave, Middletown","open_hours":[{"day":"Monday","hours":"open24hours"},{"day":"Tuesday","hours":"open24hours"},{"day":"Wednesday","hours":"open24hours"},{"day":"Thursday","hours":"open24hours"},{"day":"Friday","hours":"open24hours"},{"day":"Saturday","hours":"open24hours"},{"day":"Sunday","hours":"open24hours"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Bloomberg L.P.","address":"","desc":"Industry: financial software<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.bloomberg.com","web_formatted":"bloomberg.com","open":"","time":"","lat":22.2796324,"lng":114.16056000000003,"vicinity":"Cheung Kong Centre, 2 Queen's Road Central, Central","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"BloomBoard","address":"430 Cowper St #250, Palo Alto, CA 94301, USA","desc":"Industry: application software<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.bloomberg.com/profiles/companies/1293108D:US-bloomboard-inc","web_formatted":"bloomberg.com","open":"","time":"","lat":37.448674,"lng":-122.15995859999998,"open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"BNY Mellon Center","address":"","desc":"Industry: financial services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.bnymellon.com","web_formatted":"bnymellon.com","open":"","time":"","lat":40.4396569,"lng":-79.99580040000001,"vicinity":"Pittsburgh","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Capital One","address":"","desc":"Industry: financial<br />IS Alumni: 2","tel":"","int_tel":"","email":"","web":"https://www.capitalone.com/","web_formatted":"capitalone.com","open":"","lat":38.9242,"lng":-77.21329100000003,"vicinity":"1680 Capital One Drive, McLean","open_hours":[{"day":"Monday","hours":"9am–5pm"},{"day":"Tuesday","hours":"9am–5pm"},{"day":"Wednesday","hours":"9am–5pm"},{"day":"Thursday","hours":"9am–5pm"},{"day":"Friday","hours":"9am–5pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Capital One","address":"","desc":"Industry: financial<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.capitalone.com/","web_formatted":"capitalone.com","open":"","time":"","lat":37.7850453,"lng":-122.39999720000003,"vicinity":"201 3rd Street, San Francisco","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"CH2M HILL","address":"","desc":"Industry: engineering<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.ch2m.com","web_formatted":"ch2m.com","open":"","time":"","lat":41.88230789999999,"lng":-87.63432189999997,"open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Citi","address":"","desc":"Industry: financial<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"http://www.citigroup.com/","web_formatted":"citigroup.com","open":"","time":"","lat":40.7206751,"lng":-74.01114559999996,"vicinity":"Manhattan","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Deloitte","address":"","desc":"Industry: professional services<br />IS Alumni: 2","tel":"","int_tel":"","email":"","web":"https://www2.deloitte.com/us/en.html","web_formatted":".deloitte.com","open":"","time":"","lat":41.88041800000001,"lng":-87.63656600000002,"vicinity":"111 South Wacker Drive, Chicago","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Deloitte","address":"","desc":"Industry: professional services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www2.deloitte.com/us/en.html","web_formatted":".deloitte.com","open":"","time":"","lat":40.4399982,"lng":-80.00379479999998,"vicinity":"1 PPG Place, Pittsburgh","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Deloitte","address":"","desc":"Industry: professional services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www2.deloitte.com/us/en.html","web_formatted":".deloitte.com","open":"","time":"","lat":38.8966652,"lng":-77.02764630000001,"open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Deloitte","address":"","desc":"Industry: professional services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www2.deloitte.com/us/en.html","web_formatted":".deloitte.com","open":"","time":"","lat":38.8974671,"lng":-77.07072040000003,"open_hours":[],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Deutsche Bank Trust Co America","address":"","desc":"Industry: financial<br />IS Alumni: 2","tel":"","int_tel":"","email":"","web":"https://www.db.com/usa/","web_formatted":"db.com","open":"","time":"","lat":40.70616769999999,"lng":-74.0083194,"open_hours":[],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Facebook","address":"","desc":"Industry: internet<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"facebook.com","web_formatted":"facebook.com","open":"","time":"","lat":37.4812763,"lng":-122.1556094,"vicinity":"Menlo Park","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"ESPN Headquarters","address":"","desc":"Industry: sports broadcasting<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"www.espn.com/","web_formatted":"espn.com","open":"","time":"","lat":41.64796339999999,"lng":-72.9035055,"vicinity":"935 Middle Street, Bristol","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Epic Systems","address":"","desc":"Industry: health informatics<br />IS Alumni: 2","tel":"","int_tel":"","email":"","web":"www.epic.com","web_formatted":"epic.com","open":"","lat":42.9960594,"lng":-89.56888900000001,"vicinity":"1979 Milky Way, Verona","open_hours":[{"day":"Monday","hours":"8am–5pm"},{"day":"Tuesday","hours":"8am–5pm"},{"day":"Wednesday","hours":"8am–5pm"},{"day":"Thursday","hours":"8am–5pm"},{"day":"Friday","hours":"8am–5pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Enova International","address":"","desc":"Industry: financial services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.enova.com","web_formatted":"enova.com","open":"","lat":41.8778959,"lng":-87.63333369999998,"vicinity":"175 West Jackson Boulevard, Chicago","open_hours":[{"day":"Monday","hours":"9am–5pm"},{"day":"Tuesday","hours":"9am–5pm"},{"day":"Wednesday","hours":"9am–5pm"},{"day":"Thursday","hours":"9am–5pm"},{"day":"Friday","hours":"9am–5pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Freddie Mac","address":"","desc":"Industry: financial services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"www.freddiemac.com","web_formatted":"freddiemac.com","open":"","time":"","lat":38.8945134,"lng":-77.0235975,"vicinity":"801 Pennsylvania Avenue, NW #335, Washington","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"General Electric Digital","address":"","desc":"Industry: conglomerate<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.ge.com/","web_formatted":"ge.com","open":"","lat":37.7672375,"lng":-121.95841310000003,"vicinity":"2623 Camino Ramon, San Ramon","open_hours":[{"day":"Monday","hours":"open24hours"},{"day":"Tuesday","hours":"open24hours"},{"day":"Wednesday","hours":"open24hours"},{"day":"Thursday","hours":"open24hours"},{"day":"Friday","hours":"open24hours"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Giant Eagle, Inc.","address":"","desc":"Industry: retail<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"www.gianteagle.com","web_formatted":"gianteagle.com","open":"","time":"","lat":40.44062479999999,"lng":-79.99588640000002,"open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"GoDaddy","address":"","desc":"Industry: media<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.godaddy.com/","web_formatted":"godaddy.com","open":"","lat":37.4039969,"lng":-122.03497520000002,"vicinity":"1020 Enterprise Way #300, Sunnyvale","open_hours":[{"day":"Monday","hours":"6:30am–5pm"},{"day":"Tuesday","hours":"6:30am–5pm"},{"day":"Wednesday","hours":"6:30am–5pm"},{"day":"Thursday","hours":"6:30am–5pm"},{"day":"Friday","hours":"6:30am–5pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Goldman Sachs Headquarters","address":"","desc":"Industry: financial services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"www.goldmansachs.com","web_formatted":"goldmansachs.com","open":"","lat":40.7146731,"lng":-74.0139567,"vicinity":"200 West Street, New York","open_hours":[{"day":"Monday","hours":"9am–5pm"},{"day":"Tuesday","hours":"9am–5pm"},{"day":"Wednesday","hours":"9am–5pm"},{"day":"Thursday","hours":"9am–5pm"},{"day":"Friday","hours":"9am–5pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"J.P. Morgan Chase","address":"","desc":"Industry: financial services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.jpmorganchase.com","web_formatted":"jpmorganchase.com","open":"","time":"","lat":40.7554704,"lng":-73.9766644,"open_hours":[],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Jobcase","address":"","desc":"Industry: professional services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.jobcase.com","web_formatted":"jobcase.com","open":"","time":"","lat":42.36618259999999,"lng":-71.09245499999997,"vicinity":"201 Broadway, Cambridge","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Johnson & Johnson WHQ","address":"","desc":"Industry: pharmaceutical<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.jnj.com","web_formatted":"jnj.com","open":"","lat":40.4979518,"lng":-74.44305589999999,"vicinity":"1 Johnson And Johnson Plaza, New Brunswick","open_hours":[{"day":"Monday","hours":"9am–7pm"},{"day":"Tuesday","hours":"9am–7pm"},{"day":"Wednesday","hours":"9am–7pm"},{"day":"Thursday","hours":"9am–7pm"},{"day":"Friday","hours":"9am–7pm"},{"day":"Saturday","hours":"9am–7pm"},{"day":"Sunday","hours":"9am–7pm"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"LinkedIn Corporation","address":"","desc":"Industry‎: ‎internet<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.linkedin.com","web_formatted":"linkedin.com","open":"","lat":37.78653500000001,"lng":-122.39829509999998,"vicinity":"222 2nd Street, San Francisco","open_hours":[{"day":"Monday","hours":"8am–5pm"},{"day":"Tuesday","hours":"8am–5pm"},{"day":"Wednesday","hours":"8am–5pm"},{"day":"Thursday","hours":"8am–5pm"},{"day":"Friday","hours":"8am–5pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Moment Design","address":"","desc":"Industry: design agency<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"www.momentdesign.com","web_formatted":"momentdesign.com","open":"","lat":40.7200144,"lng":-73.9999441,"vicinity":"13 Crosby Street, New York","open_hours":[{"day":"Monday","hours":"9am–6pm"},{"day":"Tuesday","hours":"9am–6pm"},{"day":"Wednesday","hours":"9am–6pm"},{"day":"Thursday","hours":"9am–6pm"},{"day":"Friday","hours":"9am–6pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Pricewaterhouse Coopers (PWC)","address":"","desc":"Industry: professional services<br />IS Alumni: 2","tel":"","int_tel":"","email":"","web":"https://www.pwc.com","web_formatted":"pwc.com","open":"","lat":-32.928944,"lng":151.78406180000002,"vicinity":"45 Watt Street, Newcastle","open_hours":[{"day":"Monday","hours":"8:30am–5pm"},{"day":"Tuesday","hours":"8:30am–5pm"},{"day":"Wednesday","hours":"8:30am–5pm"},{"day":"Thursday","hours":"8:30am–5pm"},{"day":"Friday","hours":"8:30am–5pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Salesforce HQ","address":"","desc":"Industry: software<br />IS Alumni: 2","tel":"","int_tel":"","email":"","web":"http://salesforce.com/","web_formatted":"salesforce.com","open":"","time":"","lat":37.79330119999999,"lng":-122.39704560000001,"vicinity":"1 California Street, San Francisco","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"PricewaterhouseCoopers LLP","address":"","desc":"Industry: professional services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.pwc.com/","web_formatted":"pwc.com","open":"","time":"","lat":40.75258729999999,"lng":-73.97993150000002,"vicinity":"300 Madison Avenue, New York","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"World Wide Technology","address":"","desc":"Industry: technology<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www2.wwt.com","web_formatted":".wwt.com","open":"","lat":21.30909519999999,"lng":-157.86361060000002,"vicinity":"55 Merchant Street Suite 2810, Honolulu","open_hours":[{"day":"Monday","hours":"8am–5pm"},{"day":"Tuesday","hours":"8am–5pm"},{"day":"Wednesday","hours":"8am–5pm"},{"day":"Thursday","hours":"8am–5pm"},{"day":"Friday","hours":"8am–5pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"McKinsey & Company","address":"","desc":"Industry: business management consulting<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.mckinsey.com","web_formatted":"mckinsey.com","open":"","lat":40.75900619999999,"lng":-73.97346160000001,"vicinity":"21, 55 East 52nd Street, New York","open_hours":[{"day":"Monday","hours":"8am–5:30pm"},{"day":"Tuesday","hours":"8am–5:30pm"},{"day":"Wednesday","hours":"8am–5:30pm"},{"day":"Thursday","hours":"8am–5:30pm"},{"day":"Friday","hours":"8am–5:30pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Carnegie Mellon University","address":"","desc":"Graduate School<br />Undergraduate IS Alumni: 4","tel":"","int_tel":"","email":"","web":"cmu.edu","web_formatted":"cmu.edu","open":"","time":"","lat":40.4428081,"lng":-79.94301280000002,"vicinity":"5000 Forbes Avenue, Pittsburgh","open_hours":"","marker":{"fillColor":"#2196F3","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Boston University","address":"Boston, MA 02215","desc":"Graduate School<br />Undergraduate IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.bu.edu","web_formatted":"bu.edu","open":"","time":"","lat":42.3504997,"lng":-71.1053991,"vicinity":"Boston","open_hours":"","marker":{"fillColor":"#2196F3","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Coupa Software","address":"","desc":"Industry: software<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"https://www.coupa.com","web_formatted":"coupa.com","open":"","time":"","lat":37.5533549,"lng":-122.29931599999998,"vicinity":"1855 South Grant Street, San Mateo","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Trngle","address":"","desc":"Industry: internet<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"http://trngle.com","web_formatted":"trngle.com","open":"","time":"","lat":34.03099720000001,"lng":-118.31989399999998,"vicinity":"Los Angeles","open_hours":"","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":true,"photo":true,"tel":false,"title":true,"web":true}},{"title":"Matrix Group International, Inc.","address":"","desc":"Industry: professional services<br />IS Alumni: 1","tel":"","int_tel":"","email":"","web":"www.matrixgb.com","web_formatted":"matrixgb.com","open":"","lat":38.8486758,"lng":-77.05242069999997,"vicinity":"2711 Jefferson Davis Highway #1200, Arlington","open_hours":[{"day":"Monday","hours":"9am–6pm"},{"day":"Tuesday","hours":"9am–6pm"},{"day":"Wednesday","hours":"9am–6pm"},{"day":"Thursday","hours":"9am–6pm"},{"day":"Friday","hours":"9am–6pm"},{"day":"Saturday","hours":"Closed"},{"day":"Sunday","hours":"Closed"}],"marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":0},"iw":{"address":true,"desc":true,"email":false,"enable":true,"int_tel":false,"open":true,"open_hours":false,"photo":true,"tel":false,"title":true,"web":true}}
+                  ];
+                  for (i = 0; i < locations.length; i++) {
+                      marker = new google.maps.Marker({
+                          icon: locations[i].marker,
+                          position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                          map: map,
+                          title: locations[i].title,
+                          address: locations[i].address,
+                          desc: locations[i].desc,
+                          tel: locations[i].tel,
+                          int_tel: locations[i].int_tel,
+                          vicinity: locations[i].vicinity,
+                          open: locations[i].open,
+                          open_hours: locations[i].open_hours,
+                          photo: locations[i].photo,
+                          time: locations[i].time,
+                          email: locations[i].email,
+                          web: locations[i].web,
+                          iw: locations[i].iw
+                      });
+                      markersArray.push(marker);
+
+                      if (locations[i].iw.enable === true){
+                          bindInfoWindow(marker, map, locations[i]);
+                      }
+                  }
+              }
+          </script>
+          <style>
+              #mapkit-6193 {
+                  height:420px;
+                  width:720px;
+              }
+          </style>
+
+          <div id='mapkit-6193'></div>
+
+
+
+
+
+
+
+
+          <div class="col-md-4">
+            <div class="media d-block mb-4 text-left p-md-5 p-4 ftco-animate">
+              <div class="media-body">
+                <div class="ftco-icon mb-3"><span class="display-4 text-muted"><img src="images/job.png" width="70px"></span></div>
+                <h5 id="jobtitle" class="mt-0">Locations</h5>
+                <p id="jobdesc" class="mb-5">This graph shows the job positions of the graduating undergraduates who have majored in Information Systems and are employed. Click on the graph to learn more information about each job position!</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <footer class="ftco-footer ftco-bg-dark">
+      <div class="container">
+        <!-- <div class="row mb-5">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">Company</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="py-2 d-block">About</a></li>
+                    <li><a href="#" class="py-2 d-block">Jobs</a></li>
+                    <li><a href="#" class="py-2 d-block">Press</a></li>
+                    <li><a href="#" class="py-2 d-block">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                 <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">Communities</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="py-2 d-block">Support</a></li>
+                    <li><a href="#" class="py-2 d-block">Sharing is Caring</a></li>
+                    <li><a href="#" class="py-2 d-block">Better Web</a></li>
+                    <li><a href="#" class="py-2 d-block">Good Template</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                 <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">Useful links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="py-2 d-block">Bootstrap 4</a></li>
+                    <li><a href="#" class="py-2 d-block">jQuery</a></li>
+                    <li><a href="#" class="py-2 d-block">HTML5</a></li>
+                    <li><a href="#" class="py-2 d-block">Sass</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <ul class="ftco-footer-social list-unstyled float-md-right float-lft">
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md text-left">
+            <p>&copy; Exclusivity 2017. All Rights Reserved.  Made with <span class="icon-heart text-danger"></span>  by <a href="https://free-template.co/">Free-Template.co</a></p>
+          </div>
+        </div> -->
+      </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#4586ff"/></svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+
+
+
+    <script src="js/main.js"></script>
+
+
+  </body>
+</html>
